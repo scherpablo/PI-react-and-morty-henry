@@ -1,0 +1,46 @@
+.containerAbout {
+  width: auto;
+  height: auto;
+  min-height: 82vh;
+  padding: 10px 20px;
+}
+.h1About {
+  margin-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+}
+.divAbout {
+  padding: 50px;
+}
+.pAbout {
+  color: #bec6d1;
+  font-size: 24px;
+  text-align: justify;
+  line-height: 1.2;
+  /* text-wrap: balance; */
+}
+/* MEDIAS QUERY */
+@media (max-width: 768px) {
+  .divAbout {
+    padding: 30px;
+  }
+  .h1About {
+    font-size: 35px;
+  }
+  .pAbout {
+    font-size: 20px;
+  }  
+}
+@media (max-width: 480px) {
+  .divAbout {
+    padding: 15px;
+  }
+  .h1About {
+    font-size: 30px;
+  }
+  .pAbout {
+    font-size: 16px;
+  }  
+}

@@ -1,0 +1,135 @@
+/* FORM */
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(300px, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  min-height: 90vh;
+  width: 100%;
+}
+/* IMAGEN FORM */
+.divImgForm {
+  overflow: hidden;
+}
+.imgForm {
+  border-radius: 50%;
+  width: 400px;
+}
+/* INPUTS Y LABELS FORM */
+.divInputsForm {
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 40px 55px;
+  color: #b69c17;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 15px #fff;
+}
+.divInputsForm input {
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+/*MEDIAS QUERY */
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: auto;
+    margin-top: 20px;
+  }
+  .divInputsForm {
+    transform: scale(.9);
+  }
+  .divImgForm {
+    order: 2;
+    transform: scale(.9);
+    margin-top: 15px;
+    margin-bottom: -25px;
+  }
+}
+@media (max-width: 480px) {
+  .divInputsForm {
+    transform: scale(.8);
+  }
+  .divImgForm {
+    transform: scale(.8);
+  }  
+}
+
+/* ERRORES */
+.errorsInput {
+  border: 3px solid red;
+}
+.errorsInput:focus {
+  outline: none;
+}
+.successInput {
+  border: 3px solid green;
+}
+.successInput:focus {
+  outline: none;
+}
+.errorsSpan {
+  font-size: 10px;
+  margin-top: 10px;
+  color: red;
+}
+.errorText {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+}
+/* BOTON */
+.divButtonLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.buttonLoginForm {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  background-color: #17b676;
+}
+.buttonLoginForm:hover {
+  background-color: #17b67688;
+}
+
+/* FONDO CUADRICULADO */
+.burbujas {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: -1;
+}
+.burbuja {
+  width: 4px;
+  height: 4px; 
+  background-color: #595f69;
+  position: absolute;
+  border-radius: 50%;
+  animation: rain 6s linear infinite;
+}
+@keyframes rain {
+  0% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

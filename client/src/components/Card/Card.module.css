@@ -1,0 +1,102 @@
+/* CONTAINER */
+.container {
+  background-color: #11161f;
+  border: 1px solid #595f69;
+  border-radius: 10px;
+  padding: 10px 20px 15px 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px 0px #595f69;
+  transform: scale(.95);
+  transition: transform 0.5s ease-in-out;
+}
+.container:hover {
+  box-shadow: 10px 10px 5px 0px #a77efa;
+}
+
+/* IMAGE */
+.img {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(.9);
+  margin: 0 auto;
+}
+.img:hover {
+  border-radius: 50%;
+  transform: scale(.8);
+  transition: 0.5s ease-in-out;
+}
+
+/* H2 TEXT */
+.link {
+  text-decoration: none;
+}
+.h2ContaninerCard {
+  text-align: center;
+  cursor: pointer;
+  height: auto;
+  padding: 5px 0;
+  background-color: #a77efa;
+  border-radius: 10px;
+}
+.nameSpanCard {
+  color: #1a222d;
+  font-size: 18px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h2ContaninerCard:hover {
+  background-color: #a77efa55;
+  box-shadow: 0 0 10px #bec6d1;
+}
+.nameSpanCard:hover {
+  color: #bec6d1;
+}
+.h2Card {
+  font-size: 22px;
+  color: #595f69;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 8px 0;
+  text-align: center;
+}
+.span {
+  font-size: 18px;
+  color: #bec6d1;
+  text-shadow: none;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* BUTTON */
+.divButton {
+  margin-top: 12px;
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button {
+  width: 25px;
+  height: 25px;
+  background-color: #f44336;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #c11336;
+  color: black;
+}
+
+/* HEART */
+.heart {
+  background-color: #a77efa;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  position: fixed;
+}
+
